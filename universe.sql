@@ -126,7 +126,8 @@ CREATE TABLE public.more_info_star (
     description text,
     age_in_millions numeric(8,4) NOT NULL,
     distance_from_earth_in_au integer NOT NULL,
-    star_id integer NOT NULL
+    star_id integer NOT NULL,
+    name character varying(30)
 );
 
 
@@ -305,9 +306,9 @@ INSERT INTO public.moon VALUES (20, 'Ganymede', true, 2.741, 5);
 -- Data for Name: more_info_star; Type: TABLE DATA; Schema: public; Owner: freecodecamp
 --
 
-INSERT INTO public.more_info_star VALUES (1, 'It is the star at the center of the Solar System', 4600.0000, 1, 1);
-INSERT INTO public.more_info_star VALUES (2, 'It is on average the fifteenth-brightest star in the night sky.', 11.0000, 34781859, 2);
-INSERT INTO public.more_info_star VALUES (3, 'It is usually the tenth-brightest star in the night sky', 10.0000, 40821254, 3);
+INSERT INTO public.more_info_star VALUES (1, 'It is the star at the center of the Solar System', 4600.0000, 1, 1, 'General information');
+INSERT INTO public.more_info_star VALUES (2, 'It is on average the fifteenth-brightest star in the night sky.', 11.0000, 34781859, 2, 'General information');
+INSERT INTO public.more_info_star VALUES (3, 'It is usually the tenth-brightest star in the night sky', 10.0000, 40821254, 3, 'General information');
 
 
 --
